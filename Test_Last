@@ -1,0 +1,11 @@
+import unittest
+from Odd import Odd
+
+class Odd_Number(unittest.TestCase):
+    def test_odd_number(self):
+        get_odd_number = [6, 7, 8, 9, 10, 11, 12, 13]
+        expected_results = [7,9,11,13]
+        for result in Odd(get_odd_number):
+            return_result = result
+            break
+        self.assertEqual(expected_results,return_result)
