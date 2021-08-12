@@ -32,7 +32,9 @@ class TeamMember(IdentifiedObject):
 
     @property
     def name(self):
+        print("Hi")
         return self._name
+
 
     @name.setter
     def name(self,prop):

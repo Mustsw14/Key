@@ -4,7 +4,8 @@ def fibonacci():
     yield f1
     yield f2
     while True:
-        f1,f2 = f2,f1 + f2
+        f1 = f2
+        f2 = f1 + f2
         yield f2
 
 it = fibonacci()
